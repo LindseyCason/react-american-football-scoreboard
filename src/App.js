@@ -14,7 +14,7 @@ function App() {
       <section className="scoreboard">
         <div className="topRow">
           <div className="home">
-            <h2 className="home__name">Lions</h2>
+            <h2 className="home__name">Falcons</h2>
 
             {/* {scoreLion}
             {scoreTiger} */}
@@ -23,7 +23,7 @@ function App() {
           </div>
           <div className="timer">01:43</div>
           <div className="away">
-            <h2 className="away__name">Tigers</h2>
+            <h2 className="away__name">Saints</h2>
             <div className="away__score">{scoreTiger}</div>
           </div>
         </div>
@@ -32,12 +32,15 @@ function App() {
       <section className="buttons">
         <div className="homeButtons">
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
-          <button className="homeButtons__touchdown" onClick={() => setScoreLion(scoreLion + 7)}>Home Touchdown</button>
-          <button className="homeButtons__fieldGoal"onClick={() => setScoreLion(scoreLion + 3)}>Home Field Goal</button>
+          <button className="homeButtons__touchdown" onClick={() => setScoreLion(scoreLion + 7)}>Dirty Bird Touchdown</button>
+          <button className="homeButtons__fieldGoal"onClick={() => setScoreLion(scoreLion + 3)}>Dirty Bird Field Goal</button>
+          <button className="homeButtons__touchdown" onClick={() => setScoreLion(scoreLion + 1)}>Dirty Bird PAT</button>
+
         </div>
         <div className="awayButtons">
-          <button className="awayButtons__touchdown"onClick={() => setScoreTiger(scoreTiger + 7)}>Away Touchdown</button>
-          <button className="awayButtons__fieldGoal"onClick={() => setScoreTiger(scoreTiger + 3)}>Away Field Goal</button>
+          <button className="awayButtons__touchdown"onClick={() => setScoreTiger(scoreTiger + 7)}>Saints Touchdown</button>
+          <button className="awayButtons__fieldGoal"onClick={() => setScoreTiger(scoreTiger + 3)}>Saints Field Goal</button>
+          <button className="awayButtons__touchdown"onClick={() => setScoreTiger(scoreTiger + 1)}>Saints PAT</button>
         </div>
       </section>
     </div>
